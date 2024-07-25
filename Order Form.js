@@ -516,9 +516,9 @@ jQuery(document).ready(function() {
 					data['File Upload'] = $('#fileUpload').prop('files').length > 0;
 
 					$.ajax({
-						url: 'https://script.google.com/macros/s/AKfycbwaWAKpiX_Vf0WeD87u_J3pbRbb7NSi2kKtmY7phpabKNIjRQbeml-ib76qZ2Jp7IsaEg/exec',
+						url: 'https://script.google.com/macros/s/AKfycbzxjl6TFsz2amR506d1zAdG1JmFIrIZepux57M9r_BYq0vpsgHvk0uSvuUQB6BMabJaiQ/exec',
 						method: 'POST',
-						contentType: 'application/json',
+						contentType: 'application/x-www-form-urlencoded',
 						data: JSON.stringify(data),
 						success: function(response) {
 							if (response.result === 'success') {
