@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
-    console.log('Document is ready');
-    
+    console.log('FORM is ready');
+
     let itemCount = 1;
     const styleOptions = {
 		"5000": {
@@ -19,9 +19,8 @@ jQuery(document).ready(function() {
 				'Sunset', 'Tangerine', 'Tennessee Orange', 'Texas Orange', 'Tropical Blue',
 				'Turf Green', 'Tweed', 'Violet', 'White', 'Yellow Haze'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"8000": {
 			colors: [
 				'Ash Grey', 'Azalea', 'Black', 'Carolina Blue', 'Daisy', 'Dark Heather',
@@ -34,9 +33,8 @@ jQuery(document).ready(function() {
 				'Sport Scarlet Red', 'Sport Dark Maroon', 'Tennessee Orange', 'Texas Orange',
 				'White'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"64000": {
 			colors: [
 				'Antique Cherry Red', 'Antique Heliconia', 'Antique Sapphire', 'Azalea',
@@ -53,9 +51,8 @@ jQuery(document).ready(function() {
 				'Pistachio', 'Purple', 'Red', 'Royal', 'Sapphire', 'Sky', 'Stone Blue',
 				'Tropical Blue', 'White', 'RS Sport Grey', 'Sage', 'Sand'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"5400": {
 			colors: [
 				'Ash Grey', 'Black', 'Cardinal Red', 'Carolina Blue', 'Charcoal',
@@ -64,9 +61,8 @@ jQuery(document).ready(function() {
 				'Military Green', 'Navy', 'Orange', 'Purple', 'Red', 'Royal', 'S Orange',
 				'Safety Green', 'Sport Grey', 'White'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"18000": {
 			colors: [
 				'Antique Cherry Red', 'Ash', 'Black', 'Cardinal Red', 'Carolina Blue',
@@ -77,9 +73,8 @@ jQuery(document).ready(function() {
 				'Military Green', 'Navy', 'Orange', 'Purple', 'Red', 'Royal', 'S Orange',
 				'Safety Green', 'Safety Pink', 'Sand', 'Sapphire', 'Sport Grey', 'White'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult' , 'youth']
+		},
 		"18500": {
 			colors: [
 				'Antique Cherry Red', 'Ash', 'Black', 'Cardinal Red', 'Carolina Blue',
@@ -90,9 +85,8 @@ jQuery(document).ready(function() {
 				'Military Green', 'Navy', 'Orange', 'Purple', 'Red', 'Royal', 'S Orange',
 				'Safety Green', 'Safety Pink', 'Sand', 'Sapphire', 'Sport Grey', 'White'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"18600": {
 			colors: [
 				'Ash', 'Black', 'Cardinal Red', 'Carolina Blue', 'Dark Chocolate',
@@ -100,9 +94,8 @@ jQuery(document).ready(function() {
 				'Maroon', 'Navy', 'Purple', 'Red', 'Royal', 'Safety Green',
 				'Sport Grey', 'S Orange', 'White'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"8800": {
 			colors: [
 				'Ash Grey', 'Black', 'Carolina Blue', 'Dark Heather', 'Forest Green',
@@ -110,9 +103,8 @@ jQuery(document).ready(function() {
 				'Navy', 'Orange', 'Purple', 'Red', 'Royal', 'Sand', 'Sapphire',
 				'Sport Grey', 'White'
 			],
-			sizes: ['adult']
-		}
-		,
+			sizes: ['adult', 'youth']
+		},
 		"3931": {
 			colors: [
 				'Admiral Blue', 'Aquatic Blue', 'Ash', 'Athletic Heather', 'Azalea',
@@ -130,8 +122,7 @@ jQuery(document).ready(function() {
 				'Turquoise Heather', 'Vintage Heather Navy', 'White', 'Yellow'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"NL6210": {
 			colors: [
 				'Apple Green', 'Banana Cream', 'Black', 'Bondi Blue', 'Cardinal', 'Charcoal',
@@ -143,16 +134,14 @@ jQuery(document).ready(function() {
 				'Turquoise', 'Warm Gray', 'White'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"NL6211": {
 			colors: [
 				'Black', 'Cardinal', 'Charcoal', 'Dark Heather Gray', 'Heather Columbia Blue',
 				'Midnight Navy', 'Military Green', 'Red', 'Royal', 'White'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"NL9303": {
 			colors: [
 				'Antique Denim', 'Black', 'Black/Black', 'Desert Pink', 'Forest Green',
@@ -161,8 +150,7 @@ jQuery(document).ready(function() {
 				'Royal', 'Shitake', 'White'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"NL6051": {
 			colors: [
 				'Envy/Heather White', 'Envy/Premium Heather', 'Heather White/Vintage Black',
@@ -174,8 +162,7 @@ jQuery(document).ready(function() {
 				'Vintage Royal/Premium Heather'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"3001": {
 			colors: [
 				'Aqua', 'Army', 'Ash', 'Asphalt', 'Atlantic', 'Autumn', 'Baby Blue', 'Berry', 'Black',
@@ -193,8 +180,7 @@ jQuery(document).ready(function() {
 				'Vintage Brown', 'Vintage Navy', 'Vintage White', 'White', 'Yellow'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"3501": {
 			colors: [
 				'Ash', 'Asphalt', 'Atlantic', 'Baby Blue', 'Berry', 'Black', 'Blue Storm',
@@ -206,8 +192,7 @@ jQuery(document).ready(function() {
 				'True Royal', 'Vintage Black', 'Vintage Brown', 'Vintage Navy', 'White'
 			],
 			sizes: ['adult']
-		}
-		,
+		},
 		"1717": {
 			colors: [
 				'Banana', 'Bay', 'Berry', 'Black', 'Blossom', 'Blue Jean', 'Blue Spruce', 'Boysenberry',
@@ -409,58 +394,81 @@ jQuery(document).ready(function() {
 				'Sand', 'Scarlet', 'Silver', 'Sky Blue', 'Teal', 'Vegas Gold', 'White'
 			],
 			sizes: ['youth', 'adult']
-		}
-	};
+		},
+		"OTHER": {
+			colors: null,
+			sizes: ['youth', 'adult']
+	}};
 	
-		function updateColorOptions(styleSelect) {
+	function updateColorOptions(styleSelect) {
         const orderItem = $(styleSelect).closest('.order-item');
         const colorSelect = orderItem.find('.color-select');
         const selectedStyle = $(styleSelect).val();
+		const otherStyleInput = orderItem.find('.other-style-input');
+        const otherColorInput = orderItem.find('.other-color-input');
         colorSelect.empty().append('<option value="">Select Color</option>');
-        if (selectedStyle && styleOptions[selectedStyle]) {
-            styleOptions[selectedStyle].colors.forEach(function(color) {
-                colorSelect.append(`<option value="${color.toLowerCase()}">${color}</option>`);
-            });
-        }
-    }
+		if (selectedStyle === 'OTHER') {
+            colorSelect.hide();
+            otherStyleInput.show();
+            otherColorInput.show();
+			console.log("Custom Style")
+        } else {
+			console.log("Not a Custome Style")
+            colorSelect.show();
+            otherStyleInput.hide();
+            otherColorInput.hide();Object
+			if (selectedStyle && styleOptions[selectedStyle] && styleOptions[selectedStyle["colors"]] !==null ) {
+				colorSelect.empty().append('<option value="">Select Color</option>');
+				colorSelect.prop('disabled', false);
+				styleOptions[selectedStyle].colors.forEach(function(color) {
+					colorSelect.append(`<option value="${color.toLowerCase()}">${color}</option>`);
+				});
+					} else {
+							colorSelect.prop('disabled', true);
+						}	
+    	}
+	};
 
 		function updateSizeOptions(styleSelect) {
 			const orderItem = $(styleSelect).closest('.order-item');
 			const selectedStyle = $(styleSelect).val();
 			const youthSizes = orderItem.find('.youth-sizes');
 			const adultSizes = orderItem.find('.adult-sizes');
-			youthSizes.addClass('hidden');
-			adultSizes.addClass('hidden');
-			if (selectedStyle && styleOptions[selectedStyle]) {
-				if (styleOptions[selectedStyle].sizes.includes('youth')) {
-					youthSizes.removeClass('hidden');
+			 if (selectedStyle && styleOptions[selectedStyle]) {
+					youthSizes.toggleClass('hidden', !styleOptions[selectedStyle].sizes.includes('youth'));
+					adultSizes.toggleClass('hidden', !styleOptions[selectedStyle].sizes.includes('adult'));
+				} else {
+					youthSizes.addClass('hidden');
+					adultSizes.addClass('hidden');
 				}
-				if (styleOptions[selectedStyle].sizes.includes('adult')) {
-					adultSizes.removeClass('hidden');
-				}
-			}
 		}
 
 		function initializeOrderItem(orderItem) {
 			const styleSelect = orderItem.find('.style-select');
+			const otherStyleInput = $('<input type="text" class="other-style-input" placeholder="Enter custom style" style="display:none;">');
+        	const otherColorInput = $('<input type="text" class="other-color-input" placeholder="Enter custom color" style="display:none;">');
+			
+			styleSelect.after(otherColorInput);
+        	styleSelect.after(otherStyleInput);
+			
 			updateColorOptions(styleSelect);
 			updateSizeOptions(styleSelect);
 		}
 
+		
+
 		$(document).on('change', '.style-select', function() {
 			updateColorOptions(this);
-			updateSizeOptions(this);
+			updateSizeOptions(this);	
 		});
+	
 
 		$('#addItem').click(function() {
 			itemCount++;
 			const newItem = $('.order-item').first().clone();
 			newItem.find('input').val('');
 			newItem.find('select').prop('selectedIndex', 0);
-			newItem.find('input, select').each(function() {
-				const newId = this.id.replace(/\d+$/, itemCount);
-				$(this).attr('id', newId).attr('name', newId);
-			});
+			newItem.find('.other-style-input, .other-color-input').remove();
 			$('#orderItems').append(newItem);
 			initializeOrderItem(newItem);
 			window.scrollTo(0, document.body.scrollHeight);
@@ -475,48 +483,93 @@ jQuery(document).ready(function() {
 
 		$('#orderForm').submit(function(e) {
 			e.preventDefault();
+    
+    		// Disable the submit button
+			var $submitButton = $('#submitOrder');
+			$submitButton.prop('disabled', true);
+			$submitButton.text('Submitting...');
 			grecaptcha.ready(function() {
-				grecaptcha.execute('6LcThRgqAAAAAGXIKYinpnHki7SjGQLCXEQm4u7Z', { action: 'submit' }).then(function(token) {
+				grecaptcha.execute('6LdbrQgoAAAAACBAG6krACkYavfxDssuhHL2iXFb', { action: 'submit' }).then(function(token) {
 					var formData = $('#orderForm').serializeArray();
 					var data = {
-						styles: [],
-						colors: [],
-						sizes: [],
+						orders: [],
 						'Print Locations': [],
 						recaptcha_token: token
 					};
-
-					var currentStyleIndex = -1;
-					$(formData).each(function(index, obj) {
-						if (obj.name.startsWith('style')) {
-							if (obj.value) {
-								data.styles.push(obj.value);
-								currentStyleIndex++;
-								data.sizes[currentStyleIndex] = {};
-							}
-						} else if (obj.name.startsWith('color')) {
-							if (obj.value && currentStyleIndex > -1) {
-								data.colors[currentStyleIndex] = obj.value;
-							}
-						} else if (obj.name.match(/^(youth|adult)/i)) {
-							if (obj.value !== '' && currentStyleIndex > -1) {
-								data.sizes[currentStyleIndex][obj.name.toLowerCase()] = parseInt(obj.value, 10);
-							}
-						} else if (obj.name === 'Print Locations') {
-							data['Print Locations'].push(obj.value);
-						} else {
-							data[obj.name] = obj.value;
+		
+					// Process form fields
+					$.each(formData, function(i, field) {
+						if (field.name === 'Print Locations') {
+							data['Print Locations'].push(field.value);
+						} else if (!field.name.startsWith('Style') && !field.name.startsWith('Color') && !field.name.startsWith('Adult') && !field.name.startsWith('Y')) {
+							data[field.name] = field.value;
 						}
 					});
-
-					data.sizes = data.sizes.filter(size => Object.keys(size).length > 0);
-					if (data.colors.length < data.styles.length) {
-						data.colors = data.colors.concat(Array(data.styles.length - data.colors.length).fill(''));
-					}
-					data['File Upload'] = $('#fileUpload').prop('files').length > 0;
-
+		
+					// Process order items
+					$('.order-item').each(function(index) {
+						var style = $(this).find('.style-select').val();
+						var color = $(this).find('.color-select').val();
+						if (style === 'OTHER') {
+							style = $(this).find('.other-style-input').val();
+							color = $(this).find('.other-color-input').val();
+                    	}
+		
+						// Process youth sizes
+						$(this).find('.youth-sizes input[type="number"]').each(function() {
+							var size = $(this).attr('name');
+							var quantity = parseInt($(this).val());
+							if (quantity > 0) {
+								data.orders.push({
+									style: style,
+									color: color,
+									size: size,
+									quantity: quantity
+								});
+							}
+						});
+		
+						// Process adult sizes
+						$(this).find('.adult-sizes input[type="number"]').each(function() {
+							var size = $(this).attr('name');
+							var quantity = parseInt($(this).val());
+							if (quantity > 0) {
+								data.orders.push({
+									style: style,
+									color: color,
+									size: size,
+									quantity: quantity
+								});
+							}
+						});
+					});
+					const fileInput = document.getElementById('fileUpload');
+					webhookUrl = "https://hooks.zapier.com/hooks/catch/19215577/2ugpaom/";
+					const webhookData = new FormData();
+					webhookData.append('projectName', data["Project/Event Name"]);
+					if (fileInput.files.length > 0) {
+						const file = fileInput.files[0];
+						try {
+					webhookData.append('fileName', file.name.split('.')[0]);
+					webhookData.append('fileExtension', file.name.split('.').pop());
+					webhookData.append('fileContent', file);
+					fetch(webhookUrl, {
+						method: 'POST',
+						body: webhookData,
+					})
+					.then(response => response.json())
+					.then(result => {
+						console.log('Success:', result);
+					})
+					.catch(error => {
+						console.error('Error:', error);
+					});
+ 						} catch (error) {
+                        console.error('No file was uploaded');
+                        }}
+					
 					$.ajax({
-						url: 'https://script.google.com/macros/s/AKfycbzxjl6TFsz2amR506d1zAdG1JmFIrIZepux57M9r_BYq0vpsgHvk0uSvuUQB6BMabJaiQ/exec',
+						url: 'https://script.google.com/macros/s/AKfycbwztNKuX94j06OVLXOFmRbG6kEo0X-tCrYoI5wXLXbX_wjZPKXryBpqo-5QhthiZujo/exec',
 						method: 'POST',
 						contentType: 'application/x-www-form-urlencoded',
 						data: JSON.stringify(data),
@@ -526,14 +579,17 @@ jQuery(document).ready(function() {
 								$('#thankYouMessage').show();
 							} else {
 								alert('There was an error submitting your order: ' + response.error);
+								$submitButton.prop('disabled', false);
 							}
 						},
 						error: function(xhr, status, error) {
 							alert('There was an error submitting your order. Please try again.');
+							$submitButton.prop('disabled', false);
 						}
 					});
 				}).catch(function(error) {
 					alert('There was an error with the security check. Please try again.');
+					$submitButton.prop('disabled', false);
 				});
 			});
 		});

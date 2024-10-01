@@ -1,0 +1,142 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: auto; 
+    margin: 0 auto; 
+    padding: 20px;
+    font-weight: bold !important; /* Make all text bold */
+    color: #222 !important; /* Set text color close to black but not 100% black */
+}
+
+label { 
+    display: block; 
+    margin-top: 10px; 
+}
+
+input, select, textarea { 
+    width: 100% !important; 
+    padding: 5px !important; 
+    margin-top: 5px !important; 
+    box-sizing: border-box !important;
+    font-weight: bold !important; /* Make text entered in fields bold */
+    color: #222 !important; /* Set text color in fields close to black but not 100% black */
+}
+
+input[type="email"] { 
+    width: 50% !important; 
+}
+input[type="text"]#phone{
+ width: 50% !important
+}
+
+input[type="number"] { 
+    width: 200px !important; 
+}
+
+textarea { 
+    height: 100px !important; 
+}
+
+.button-container { 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+button { 
+    margin: 10px 5px; 
+    padding: 10px 20px; 
+}
+
+#submitOrder { 
+    font-size: 1.2em !important; 
+    padding: 15px 30px; 
+    margin-top: 30px; 
+}
+
+.order-item { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+.size-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.size-input {
+    width: 14% !important; /* Adjust width for better display on desktop */
+    margin-bottom: 10px !important; /* Add some vertical space between rows */
+}
+
+.size-input input {
+    width: 100% !important;
+    padding: 8px !important; /* Increased padding for larger touch targets */
+    font-size: 20px !important; /* Larger font size for better readability */
+    text-align: center !important; /* Center the numbers in the input */
+    font-weight: bold !important; /* Make text entered in fields bold */
+    color: #222 !important; /* Set text color in fields close to black but not 100% black */
+}
+
+.hidden { 
+    display: none; 
+}
+
+.name-row { 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.name-field { 
+    width: 48% !important; 
+    margin-bottom: 10px !important; /* Add some vertical space between rows */
+}
+
+.print-locations {
+    margin-top: 10px;
+}
+
+.checkbox-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.checkbox-row label {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: auto !important;
+    margin-right: 5px !important;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .size-input {
+        width: 45% !important; /* Adjust width for better display on mobile */
+    }
+
+    .name-field {
+        width: 100% !important; /* Make name fields full width on mobile */
+    }
+
+    input[type="email"], input[type="tel"] #phone {
+        width: 100% !important; /* Make email input full width on mobile */
+    }
+
+    input[type="number"] {
+        width: 100% !important; /* Make number inputs full width on mobile */
+    }
+}

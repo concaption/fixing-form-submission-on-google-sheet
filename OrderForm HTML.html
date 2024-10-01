@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Form</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcThRgqAAAAAGXIKYinpnHki7SjGQLCXEQm4u7Z"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdbrQgoAAAAACBAG6krACkYavfxDssuhHL2iXFb"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://onescreenprinting.com/wp-content/uploads/custom-css-js/6451.js"></script>
     <script src="./Order Form.js"></script>
 </head>
 <body>
@@ -94,10 +96,10 @@
 
         <label for="zip">ZIP:</label>
         <input type="text" id="zip" name="ZIP" required>
-
         <label for="email">Email address:</label>
         <input type="email" id="email" name="Email" required>
-
+        <label for="phone">Phone number:</label>
+        <input type="text" id="phone" name="Phone">
         <label for="fileUpload">File Upload:</label>
         <input type="file" id="fileUpload" name="File Upload">
 
@@ -156,8 +158,11 @@
                     <option value="DT6000">DT6000 - District - (100% cotton)</option>
                     <option value="N3142">N3142 - A4 - (100% polyester)</option>
                     <option value="N3165">N3165 - A4 - (polyester long-sleeve)</option>
+					<option value="OTHER">OTHER</option>
                 </select>
+                
 
+				
                 <label for="color1">Color:</label>
                 <select id="color1" name="Color" class="color-select">
                     <option value="">Select Color</option>
@@ -166,22 +171,22 @@
                 <h4>Sizes:</h4>
                 <div class="youth-sizes">
                     <div class="size-row">
-                        <div class="size-input"><label for="youthXS1">YXS</label><input type="number" id="youthXS1" name="YXS" min="0"></div>
-                        <div class="size-input"><label for="youthS1">YS</label><input type="number" id="youthS1" name="YS" min="0"></div>
-                        <div class="size-input"><label for="youthM1">YM</label><input type="number" id="youthM1" name="YM" min="0"></div>
-                        <div class="size-input"><label for="youthL1">YL</label><input type="number" id="youthL1" name="YL" min="0"></div>
-                        <div class="size-input"><label for="youthXL1">YXL</label><input type="number" id="youthXL1" name="YXL" min="0"></div>
+                        <div class="size-input"><label for="youthXS">YXS</label><input type="number" id="youthXS" name="YXS" min="0"></div>
+                        <div class="size-input"><label for="youthS">YS</label><input type="number" id="youthS" name="YS" min="0"></div>
+                        <div class="size-input"><label for="youthM">YM</label><input type="number" id="youthM" name="YM" min="0"></div>
+                        <div class="size-input"><label for="youthL">YL</label><input type="number" id="youthL" name="YL" min="0"></div>
+                        <div class="size-input"><label for="youthXL">YXL</label><input type="number" id="youthXL" name="YXL" min="0"></div>
                     </div>
                 </div>
                 <div class="adult-sizes">
                     <div class="size-row">
-                        <div class="size-input"><label for="adultS1">S</label><input type="number" id="adultS1" name="Adult S" min="0"></div>
-                        <div class="size-input"><label for="adultM1">M</label><input type="number" id="adultM1" name="Adult M" min="0"></div>
-                        <div class="size-input"><label for="adultL1">L</label><input type="number" id="adultL1" name="Adult L" min="0"></div>
-                        <div class="size-input"><label for="adultXL1">XL</label><input type="number" id="adultXL1" name="Adult XL" min="0"></div>
-                        <div class="size-input"><label for="adult2XL1">2XL</label><input type="number" id="adult2XL1" name="Adult 2XL" min="0"></div>
-                        <div class="size-input"><label for="adult3XL1">3XL</label><input type="number" id="adult3XL1" name="Adult 3XL" min="0"></div>
-                        <div class="size-input"><label for="adult4XL1">4XL</label><input type="number" id="adult4XL1" name="Adult 4XL" min="0"></div>
+                        <div class="size-input"><label for="adultS">S</label><input type="number" id="adultS" name="Adult S" min="0"></div>
+                        <div class="size-input"><label for="adultM">M</label><input type="number" id="adultM" name="Adult M" min="0"></div>
+                        <div class="size-input"><label for="adultL">L</label><input type="number" id="adultL" name="Adult L" min="0"></div>
+                        <div class="size-input"><label for="adultXL">XL</label><input type="number" id="adultXL" name="Adult XL" min="0"></div>
+                        <div class="size-input"><label for="adult2XL">2XL</label><input type="number" id="adult2XL" name="Adult 2XL" min="0"></div>
+                        <div class="size-input"><label for="adult3XL">3XL</label><input type="number" id="adult3XL" name="Adult 3XL" min="0"></div>
+                        <div class="size-input"><label for="adult4XL">4XL</label><input type="number" id="adult4XL" name="Adult 4XL" min="0"></div>
                     </div>
                 </div>
             </div>
